@@ -5,7 +5,13 @@
     max-height: 50px;
     height: 100%;
     position: relative;
+    transition: all 0.5s ease-out; 
+}
 
+
+.photo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 

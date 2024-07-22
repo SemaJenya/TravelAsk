@@ -1,6 +1,6 @@
 import s from './photosComposition.module.css';
 
-function PhotosComposition({photo, index, photos, max_view_photos, xIndex}) {
+function PhotosComposition({photo, index, photos, max_view_photos}) {
   return (
     <div className={s.photo} key={index}>
        {photo && <img className={s.image} src={photo}/>}
