@@ -1,8 +1,9 @@
 import s from './photosComposition.module.css';
 
-function PhotosComposition({photo, index, photos, max_view_photos}) {
+function PhotosComposition({photo, index, photos, max_view_photos, handleOpenPhoto}) {
+
   return (
-    <div className={s.photo} key={index}>
+    <div className={s.photo} key={index} onClick={handleOpenPhoto}>
        {photo && <img className={s.image} src={photo}/>}
        {console.log(photos.length, 'array')}
        {console.log(index, 'index')}

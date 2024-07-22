@@ -15,7 +15,6 @@ function monthDiff(dateFrom, dateTo) {
 }
 
 const diff_1 = monthDiff(date1, currentDate)
-console.log(diff_1, 'diff');
 
 export const reviews = {
     user_1: {

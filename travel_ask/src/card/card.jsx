@@ -3,12 +3,30 @@ import avatar from '../images/avatar.svg';
 import { reviews } from '../const/const';
 import PhotosComposition from '../photosComposition/photosComposition';
 import like from '../images/like.svg';
+import { useState } from 'react';
+import Modal from '../modal/modal';
 
 
 function Card() {
 
   const max_view_photos = 4;
-  const photoToShow = reviews.user_1.photos.slice(0, max_view_photos)
+  const photoToShow = reviews.user_1.photos.slice(0, max_view_photos);
+
+  const [isClick, setIsClick] = useState(false);
+  const [imageClick, setIsImageClick] = useState();
+
+  const handleOpenPhoto = (e) => {
+    setIsClick(!isClick);
+    const image = e.target.src;
+    setIsImageClick(image)
+  }
+
+
+  const onClose = () => {
+    setIsClick(!isClick);
+  }
+
+  console.log(imageClick, 'наша картинка');
 
   return (
     <div className={s.card}>
@@ -24,6 +42,7 @@ function Card() {
             if (photo) {
               return (<PhotosComposition
                 photo={photo}
+                handleOpenPhoto={handleOpenPhoto}
                 index={index}
                 photos={reviews.user_1.photos}
                 max_view_photos={max_view_photos}
@@ -32,6 +51,10 @@ function Card() {
           })
         }
       </div>
+
+      {isClick && (<Modal imageClick={imageClick} onClose={onClose}/>)}
+
+
       <div className={s.footer}>
         <p className={s.publication_date}>{reviews.user_1.date > 10 ?
                                           'около 1 года назад' : 
