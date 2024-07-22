@@ -1,0 +1,73 @@
+
+.card {
+    /* max-width: 269px; */
+    max-width: 300px;
+    width: 100%;
+    /* max-height: 361px; */
+    max-height: 410px;
+    height: 100%;
+    background-color: rgba(249, 247, 242, 1);
+    padding: 26px 12px 23px 19px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.user {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+
+.image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+
+
+.name {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.titile {
+    text-transform: uppercase;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    gap: 3px;
+    color: black;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.43px;
+    font-weight: 200px;
+    margin-bottom: 12px;
+}
+
+
+.city {
+    margin: 0;   
+    color: rgba(252, 79, 30, 1);
+    font-weight: 500;
+}
+
+
+.comment {
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 11px;
+}
+
+
+.photos {
+    display: flex;
+    gap: 5px;
+}
