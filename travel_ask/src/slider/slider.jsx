@@ -41,11 +41,11 @@ function Slider() {
           )}
         </div>
       </div>
-      <ButtonSlider moveSlide={prevSlide} direction={'prev'} />
-      <ButtonSlider moveSlide={nextSlide} direction={'next'} />
+      <ButtonSlider moveSlide={prevSlide} direction={'prev'} key={'prev'}/>
+      <ButtonSlider moveSlide={nextSlide} direction={'next'} key={'next'}/>
       <div className={s.dots_container}>
             {Array.from({length: reviews.length - 1}).map((dot, index) => (
-              <div className={slideIndex === index + 1 ? sel(s.dot, s.active) : s.dot} onClick={() => dotClick(index + 1)}>
+              <div className={slideIndex === index + 1 ? sel(s.dot, s.active) : s.dot} onClick={() => dotClick(index + 1)} key={index}>
 
               </div>
             ))}

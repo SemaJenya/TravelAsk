@@ -1,4 +1,5 @@
 
+import Chats from '../chats/chats';
 import Header from '../header/header';
 import Main from '../main/main';
 import Reviews from '../reviews/reviews';
@@ -10,6 +11,7 @@ function App() {
       <Header/>
       <Main />
       <Reviews />
+      <Chats/>
       
     </div>
   );
