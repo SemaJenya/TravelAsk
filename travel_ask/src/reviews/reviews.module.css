@@ -16,3 +16,20 @@
     text-align: left;
     margin-bottom: 21px;
 }
+
+.button_all {
+    width: 124px;
+    height: 40px;
+    border: none;
+    border: 2px solid rgba(255, 70, 65, 1);
+    background-color: transparent;
+    font-family: 'KievitPro';
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-out; 
+}
+
+.button_all:hover {
+    background-color: rgba(255, 70, 65, 0.1);
+    transform: scale(1.1)
+}

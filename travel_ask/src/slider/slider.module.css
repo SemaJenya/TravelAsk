@@ -1,0 +1,57 @@
+
+.slider_box {
+    position: relative;
+    display: flex;
+    width: 100%; 
+    margin-bottom: 32px;
+}
+
+
+
+.slider {
+    position: relative;
+    display: flex;
+    width: 100%; 
+    overflow: hidden;
+}
+
+
+.slider_container {
+    display: flex;
+    gap: 20px;
+    transition: all 0.5s ease-out; 
+    
+}
+
+
+.dots_container {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(33, 33, 33, 1);
+    cursor: pointer;
+    transition: all 0.3s ease-out; 
+    opacity: 1;
+}
+
+.active {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 70, 65, 1);
+}
+
+
+.dot:hover {
+    opacity: 0.7;
+    transform: scale(1.7)
+}

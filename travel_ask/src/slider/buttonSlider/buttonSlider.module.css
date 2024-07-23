@@ -1,0 +1,45 @@
+
+.button_slider_left {
+    position: absolute;
+    top: 0;
+    left: -37px;
+    z-index: 22;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    opacity: 0;
+    height: 410px;
+    cursor: pointer;
+}
+
+
+.button_slider_right {
+    position: absolute;
+    top: 0;
+    right: -37px;
+    z-index: 22;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    opacity: 0;
+    height: 410px;
+    cursor: pointer;
+}
+
+
+.button_slider_left:hover {
+    opacity: 1;
+    background-color: rgba(249, 247, 242, 0.3);
+}
+
+
+.button_slider_right:hover {
+    opacity: 1;
+    background-color: rgba(249, 247, 242, 0.3);
+}
+
+
+.button_image {
+    width: 55px;
+    height: 55px;
+}
