@@ -4,7 +4,10 @@ import chat_avatar_client from '../images/chat_avatar_client.png';
 import flagsvg from '../images/flagsvg.svg';
 import starY from '../images/StarY.svg';
 import starE from '../images/StarE.svg';
-import sel from'classnames';
+import sel from 'classnames';
+import telegramm from '../images/telegramm.svg';
+import Message from '../message/message';
+import { chatStore } from '../const/chat';
 
 function Chat({ isClient }) {
 
@@ -17,33 +20,41 @@ function Chat({ isClient }) {
         <div className={s.info}>
           <img className={s.header_avatar} src={!isClient ? chat_avatar_client : chat_avatar_admin} alt='avatar' />
           <div className={s.name_container}>
-            <p className={s.name}>{ !isClient ? 'Администратор'  : 'Наталия Полянская'}</p>
+            <p className={s.name}>{!isClient ? 'Администратор' : 'Наталия Полянская'}</p>
             <p className={s.description}>
-              <img className={s.flag} src={flagsvg} alt='flag'/>
+              <img className={s.flag} src={flagsvg} alt='flag' />
               {!isClient ? 'TravelAsk' : 'Гид по Баварии, фотограф'}
             </p>
           </div>
         </div>
 
         <div className={isClient ? s.stars : sel(s.stars, s.stars_invisible)}>
-          <img className={s.star} src={starY} alt='star'/>
-          <img className={s.star} src={starY} alt='star'/>
-          <img className={s.star} src={starY} alt='star'/>
-          <img className={s.star} src={starY} alt='star'/>
-          <img className={s.star} src={starE} alt='star'/>
+          <img className={s.star} src={starY} alt='star' />
+          <img className={s.star} src={starY} alt='star' />
+          <img className={s.star} src={starY} alt='star' />
+          <img className={s.star} src={starY} alt='star' />
+          <img className={s.star} src={starE} alt='star' />
         </div>
       </div>
 
       {/* это поле отображения сообщений */}
       <div className={s.chat_field}>
+        {chatStore.map((userObj, index) => (
+          <Message userObj={userObj} isClient={isClient} key={index} />
+        ))}
+        
       </div>
 
-      <form>
-        <img />
-        <input type='text'></input>
-        <button type='submit'>
-          <img />
-        </button>
+
+      <form className={s.form}>
+        <img className={s.form_avatar} src={isClient ? chat_avatar_client : chat_avatar_admin} />
+        <div className={s.input_container}>
+          <input className={s.input} type='text' placeholder='Напишите сообщение...'></input>
+          <button className={s.submit_button} type='submit'>
+            <img className={s.submit_image} src={telegramm} alt='submit' />
+          </button>
+        </div>
+
       </form>
 
     </div>

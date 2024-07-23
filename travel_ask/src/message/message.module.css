@@ -1,0 +1,44 @@
+
+.message_container {
+    display: flex;
+    background-color: transparent;
+    gap: 19px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.client {
+    background-color: rgba(249, 247, 242, 1);
+}
+
+
+.avatar_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+
+.message_box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.message {
+    margin: 0;
+}
+
+.time {
+    color: rgba(157, 157, 157, 1);
+    margin: 0;
+    font-size: 11px;
+    font-family: 'Roboto';
+
+}
