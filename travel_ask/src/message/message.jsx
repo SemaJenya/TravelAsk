@@ -42,7 +42,7 @@ function Message({ userObj, isClient }) {
           s.message_container}>
 
       <div className={s.avatar_container}>
-        <img className={s.avatar} src={userObj.id == 1 ? chat_avatar_admin : chat_avatar_client} />
+        <img className={s.avatar} src={userObj.id == 1 ? chat_avatar_client : chat_avatar_admin} />
       </div>
       <div className={s.message_box}>
         <p className={s.message}>{userObj.message}</p>

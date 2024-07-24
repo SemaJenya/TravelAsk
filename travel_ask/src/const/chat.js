@@ -17,9 +17,7 @@ function minutsDiff(dateFrom, dateTo) {
  const currentDate = new Date();
  const date1 = new Date("7-23-2024");
 
-//  const diff = dayDiff(date1, currentDate)
 
-//  console.log(diff, 'day');
 
 export const test_1 = {
     id: 1,
@@ -38,4 +36,5 @@ export const test_2 = {
 
 
 
-export let chatStore = [test_1, test_2, test_1, test_2];
+export const chatStore = [test_1, test_2, test_1, test_2, test_1, test_2, test_1, test_2];
+console.log(chatStore, 'default store valu')
