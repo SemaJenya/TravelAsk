@@ -2,7 +2,7 @@
 
 .chats {
     display: flex;
-    gap: 50px;
+    gap: 23.5px;
     margin-bottom: 100px;
 }
 
@@ -19,4 +19,11 @@
     font-size: 29px;
     letter-spacing: 1px;
     margin-bottom: 25px;
+}
+
+
+.grey_line {
+    height: 758px;
+    border: 1px solid rgba(235, 233, 228, 1);
+    display: flex;
 }

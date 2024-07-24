@@ -25,7 +25,7 @@ function Chats() {
         <Chat isClient={isClient} onValueChanged={setIsValueChanged}/>
       </div>
 
-      {/* тут вставить разделительную полосу */}
+      <div className={s.grey_line}></div>
 
       <div className={s.chat_container} key={'client'}>
         <h2 className={s.title}>Чат с администратором</h2>

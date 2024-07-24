@@ -22,16 +22,17 @@ function minutsDiff(dateFrom, dateTo) {
 export const test_1 = {
     id: 1,
     date: new Date(),
-    message: `hello world fjjfjfj fjfjjfjfkf jkfdkdhhf sdkhjh dkghjhfj
-    hfgdjdjjd djdjjdjd djd djjdjdjd djdjdjjd djdjdjdjdjdkjdkdj djdkjd
-     djkdjkd djkd kjdhdsjhsdjhd x lxfkjghxkh djhkhdkjdhhd vdjdhd 
-     dhdjhdjd dhjdhdjddhd jvkhjv ddd`
+    message: `Из достопримечательностей могу предложить обратить
+     внимание на вулкан Майон, путешествие запомнится вам надолго
+      хотя бы из-за невероятной сложности подъема на него.
+       Поверьте, это стоит того; также хотелf бы отметить очень важную область исследования `
 }
 
 export const test_2 = {
     id: 2, 
     date: new Date(),
-    message: 'or not fhfhhf fgstqoq .ncbxhbhks bhagfkjnx laknkfn mhdbsshf?'
+    message: `Что из себя представляет вулкан?
+    Просто хочу убедиться, что готова к такому путешествию.`
 }
 
 
