@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "./static/css/main.62f3f61c.css",
+    "main.js": "./static/js/main.cc85fc6c.js",
+    "static/media/Roboto-Regular.ttf": "./static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Barselona.svg": "./static/media/Barselona.5a3bc0cefe5a1ed8d7e7a706e5fe4334.svg",
+    "static/media/KievitPro-Medium.woff": "./static/media/KievitPro-Medium.0485a59affce51cb78dd.woff",
+    "static/media/KievitPro-Light.woff": "./static/media/KievitPro-Light.ad99fcb0387d620b781c.woff",
+    "static/media/KievitPro-Regular.woff": "./static/media/KievitPro-Regular.e24d08b59e7f8e16b4ff.woff",
+    "static/media/KievitPro-Medium.woff2": "./static/media/KievitPro-Medium.955778b49cfa1fd1b890.woff2",
+    "static/media/KievitPro-Light.woff2": "./static/media/KievitPro-Light.a64d8302c848aceb5753.woff2",
+    "static/media/KievitPro-Regular.woff2": "./static/media/KievitPro-Regular.d603aad71bc0846268b6.woff2",
+    "static/media/photo1.svg": "./static/media/photo1.6527a47beb2e68d62aeb2027d882d498.svg",
+    "static/media/avatar.svg": "./static/media/avatar.053c3f5a2cf37591f0e5eab9aa5630ea.svg",
+    "static/media/photo2.svg": "./static/media/photo2.a2b062b0dd28a5429b3464c0c2b478c2.svg",
+    "static/media/photo3.svg": "./static/media/photo3.dcfadf466132edea7bfc5783b233e248.svg",
+    "static/media/Slider-Left-arrow.svg": "./static/media/Slider-Left-arrow.f9b407542ae3ac1ea5bfd655de3544e6.svg",
+    "static/media/Slider-Right-arrow.svg": "./static/media/Slider-Right-arrow.1cd701ad52e33d3a2a3a2bfa5ef7a684.svg",
+    "static/media/like.svg": "./static/media/like.a81c6bfae120a74d2e59a09ac3a71318.svg",
+    "static/media/StarY.svg": "./static/media/StarY.3abd06beb6ee4d25116b1da5fc4c63f1.svg",
+    "index.html": "./index.html",
+    "static/media/StarE.svg": "./static/media/StarE.d0da880cc5ca162453dd0895fa41beb9.svg",
+    "static/media/telegramm.svg": "./static/media/telegramm.d6f4972265ea1f302d792bfdf434e1be.svg",
+    "static/media/flagsvg.svg": "./static/media/flagsvg.db9a18d79fe0979f5820e01704421044.svg",
+    "main.62f3f61c.css.map": "./static/css/main.62f3f61c.css.map",
+    "main.cc85fc6c.js.map": "./static/js/main.cc85fc6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62f3f61c.css",
+    "static/js/main.cc85fc6c.js"
+  ]
+}
