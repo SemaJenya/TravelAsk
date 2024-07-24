@@ -12,7 +12,7 @@ import { useEffect, useRef, useState } from 'react';
 
 
 
-function Chat({ isClient }) {
+function Chat({ isClient, onValueChanged }) {
 
 
   const [inputValue, setInputValue] = useState('');
@@ -37,6 +37,7 @@ function Chat({ isClient }) {
         message: inputValue,
       })
     }
+    setInputValue('')
   }
 
  
@@ -51,6 +52,10 @@ function Chat({ isClient }) {
         console.log(dataUser, 'abc')
         chatStore.push(dataUser);
         setDataUser(null);
+        onValueChanged(true);
+      } 
+      else{
+        onValueChanged(false);
       }
     
   }, [ messageRef, handleSubmitMessage, chatStore, dataUser ]);
@@ -88,7 +93,7 @@ function Chat({ isClient }) {
       </div>
 
 
-      <form className={s.form}>
+      <form className={s.form} >
         <img className={s.form_avatar} src={isClient ? chat_avatar_client : chat_avatar_admin} />
         <div className={s.input_container}>
           <input 
@@ -97,7 +102,6 @@ function Chat({ isClient }) {
             placeholder='Напишите сообщение...'
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            onSubmit={(e) => setInputValue('')}
             >
             
           </input>

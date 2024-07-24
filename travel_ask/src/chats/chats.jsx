@@ -8,10 +8,12 @@ import { chatStore } from '../const/chat';
 function Chats() {
 
   const [isClient, setIsClient] = useState(true);
+  const [isValueChanged, setIsValueChanged] = useState(false);
+
 
   useEffect(() => {
-    console.log(chatStore, 'chatStore');
-  }, [chatStore])
+    console.log(isValueChanged, 'isValueChanged');
+  }, [isValueChanged])
 
 
 
@@ -20,14 +22,14 @@ function Chats() {
 
       <div className={s.chat_container} key={'admin'}>
         <h2 className={s.title}>Чат с пользователем</h2>
-        <Chat isClient={isClient} />
+        <Chat isClient={isClient} onValueChanged={setIsValueChanged}/>
       </div>
 
       {/* тут вставить разделительную полосу */}
 
       <div className={s.chat_container} key={'client'}>
         <h2 className={s.title}>Чат с администратором</h2>
-        <Chat isClient={!isClient} />
+        <Chat isClient={!isClient}  onValueChanged={setIsValueChanged}/>
       </div>
 
 
