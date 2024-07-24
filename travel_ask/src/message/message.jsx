@@ -6,30 +6,32 @@ import sel from 'classnames';
 
 function Message({ userObj, isClient }) {
 
-  function diffDay (dateFrom, dateTo)  {
-    console.log(dateTo.getDate() - dateFrom.getDate() );
-    return dateTo.getDate() - dateFrom.getDate() 
-  }
-
-
+  const day = userObj.date;
   const currentDay = new Date()
 
-//дату разобраться 
 
-  // const whichDay = () => {
-  //   console.log('djdjjd');
-  //   if(diffDay(userObj.date.getDate(), currentDay.getDate()) == 1) {
-  //     console.log(diffDay(userObj.date.getDate(), currentDay.getDate()));
-  //     return 'Сегодня'
-  //   }
-  //   else if (diffDay(userObj.date.getDate(), currentDay.getDate()) == 2) {
-  //     return 'Вчера'
-  //   }
-  //   else {
-  //     let date = userObj.date.getDate() + ' ' + 'месяц';
-  //     return date
-  //   }
-  // }
+  const diffDay = currentDay.getDate() - day.getDate();
+  console.log(diffDay, 'diffDay');
+
+  let whenSent = '';
+
+  const whichDay = () => {
+    console.log('djdjjd');
+    if (diffDay == 0) {
+      console.log(diffDay);
+      return whenSent = 'Сегодня'
+    }
+    else if (diffDay == 1) {
+      return whenSent = 'Вчера'
+    }
+    else {
+      let date = userObj.date.getDate() + ' ' + 'месяц';
+      return whenSent = date
+    }
+  }
+  whichDay();
+  console.log(whenSent, 'whichDay');
+
 
 
   return (
@@ -46,7 +48,7 @@ function Message({ userObj, isClient }) {
       </div>
       <div className={s.message_box}>
         <p className={s.message}>{userObj.message}</p>
-        <p className={s.time}>Сегодня в {userObj.date.getHours() + ':' + userObj.date.getMinutes()}</p>
+        <p className={s.time}>{whenSent} в {userObj.date.getHours() + ':' + userObj.date.getMinutes()}</p>
       </div>
 
     </div>

@@ -19,9 +19,11 @@ function minutsDiff(dateFrom, dateTo) {
 
 
 
+// console.log(new Date('2023-12-31T18:59:59.999'));
+
 export const test_1 = {
     id: 1,
-    date: new Date(),
+    date: new Date('2024-07-23T10:55:59.999'),
     message: `Из достопримечательностей могу предложить обратить
      внимание на вулкан Майон, путешествие запомнится вам надолго
       хотя бы из-за невероятной сложности подъема на него.
@@ -30,7 +32,7 @@ export const test_1 = {
 
 export const test_2 = {
     id: 2, 
-    date: new Date(),
+    date: new Date('2024-07-23T10:55:59.999'),
     message: `Что из себя представляет вулкан?
     Просто хочу убедиться, что готова к такому путешествию.`
 }
@@ -38,4 +40,4 @@ export const test_2 = {
 
 
 export const chatStore = [test_1, test_2, test_1, test_2, test_1, test_2, test_1, test_2];
-console.log(chatStore, 'default store valu')
+// console.log(chatStore, 'default store valu')
