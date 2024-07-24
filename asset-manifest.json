@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.62f3f61c.css",
-    "main.js": "./static/js/main.cc85fc6c.js",
+    "main.css": "./static/css/main.e14076c9.css",
+    "main.js": "./static/js/main.d9e90130.js",
     "static/media/Roboto-Regular.ttf": "./static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Barselona.svg": "./static/media/Barselona.5a3bc0cefe5a1ed8d7e7a706e5fe4334.svg",
     "static/media/KievitPro-Medium.woff": "./static/media/KievitPro-Medium.0485a59affce51cb78dd.woff",
@@ -22,11 +22,11 @@
     "static/media/StarE.svg": "./static/media/StarE.d0da880cc5ca162453dd0895fa41beb9.svg",
     "static/media/telegramm.svg": "./static/media/telegramm.d6f4972265ea1f302d792bfdf434e1be.svg",
     "static/media/flagsvg.svg": "./static/media/flagsvg.db9a18d79fe0979f5820e01704421044.svg",
-    "main.62f3f61c.css.map": "./static/css/main.62f3f61c.css.map",
-    "main.cc85fc6c.js.map": "./static/js/main.cc85fc6c.js.map"
+    "main.e14076c9.css.map": "./static/css/main.e14076c9.css.map",
+    "main.d9e90130.js.map": "./static/js/main.d9e90130.js.map"
   },
   "entrypoints": [
-    "static/css/main.62f3f61c.css",
-    "static/js/main.cc85fc6c.js"
+    "static/css/main.e14076c9.css",
+    "static/js/main.d9e90130.js"
   ]
 }
