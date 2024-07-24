@@ -49,7 +49,6 @@ function Chat({ isClient, onValueChanged }) {
       }
 
       if (dataUser) {
-        console.log(dataUser, 'abc')
         chatStore.push(dataUser);
         setDataUser(null);
         onValueChanged(true);

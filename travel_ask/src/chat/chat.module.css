@@ -142,8 +142,11 @@
     height: 43px;
     box-sizing: border-box;
     border: 1px solid rgba(235, 233, 228, 1);
-    text-align: center;
-      
+    
+}
+
+.input::placeholder {
+    text-align: center; 
 }
 
 

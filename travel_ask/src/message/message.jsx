@@ -11,14 +11,11 @@ function Message({ userObj, isClient }) {
 
 
   const diffDay = currentDay.getDate() - day.getDate();
-  console.log(diffDay, 'diffDay');
 
   let whenSent = '';
 
   const whichDay = () => {
-    console.log('djdjjd');
     if (diffDay == 0) {
-      console.log(diffDay);
       return whenSent = 'Сегодня'
     }
     else if (diffDay == 1) {
@@ -30,7 +27,6 @@ function Message({ userObj, isClient }) {
     }
   }
   whichDay();
-  console.log(whenSent, 'whichDay');
 
 
 
